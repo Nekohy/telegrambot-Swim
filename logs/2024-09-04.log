@@ -1,0 +1,112 @@
+2024/09/04 09:16:13 telegrambot.go:35: [INFO] Authorized on account TheMars1_bot
+2024/09/04 09:16:29 telegrambot.go:45: [ERROR] Error in getting update!
+2024/09/04 09:16:30 telegrambot.go:22: [ERROR] Get chat error ChatId: -1001536556159 
+ UserId : 1715519775 
+ gname : test for info 
+
+2024/09/04 09:16:31 telegrambot.go:90: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/04 09:19:56 telegrambot.go:36: [INFO] Authorized on account TheMars1_bot
+2024/09/04 09:20:07 telegrambot.go:46: [ERROR] Error in getting update!
+2024/09/04 09:20:08 telegrambot.go:23: [ERROR] Get chat error ChatId: -1001536556159 
+ UserId : 1715519775 
+ gname : test for info 
+
+2024/09/04 09:20:09 telegrambot.go:91: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/04 09:30:35 telegrambot.go:46: [INFO] Authorized on account TheMars1_bot
+2024/09/04 09:30:47 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:30:49 telegrambot.go:101: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/04 09:32:19 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:32:59 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:33:05 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:33:25 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:33:28 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:33:35 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:33:40 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:33:48 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:33:50 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:33:56 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:34:03 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:34:12 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:34:25 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:34:37 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:34:59 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:35:03 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:35:12 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:35:18 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:35:21 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:35:27 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:35:29 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:35:35 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:36:08 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:36:13 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:36:14 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:36:15 telegrambot.go:101: [ERROR] Bad Request: can't remove chat owner
+2024/09/04 09:36:17 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:36:42 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:36:49 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:36:50 telegrambot.go:109: [ERROR] Found access dinded ID:5014246776
+2024/09/04 09:37:04 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:37:19 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:37:19 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:37:19 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:37:19 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:37:40 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:37:54 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:37:54 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:37:55 telegrambot.go:33: [ERROR] Get chat error ChatId:Get error! Bad Request: PARTICIPANT_ID_INVALID 
+ -1001536556159 
+ UserId : 5568996607 
+ gname : test for info 
+
+2024/09/04 09:37:56 telegrambot.go:109: [ERROR] Found access dinded ID:5014246776
+2024/09/04 09:37:56 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:38:02 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:38:03 telegrambot.go:33: [ERROR] Get chat error ChatId:Get error! Bad Request: chat not found 
+ -1001536556119 
+ UserId : 5568996607 
+ gname :  
+
+2024/09/04 09:38:03 telegrambot.go:109: [ERROR] Found access dinded ID:5014246776
+2024/09/04 09:38:17 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:39:04 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:39:06 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:39:14 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:39:25 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:39:33 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:41:28 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:41:37 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:41:51 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:43:39 telegrambot.go:46: [INFO] Authorized on account TheMars1_bot
+2024/09/04 09:43:43 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:43:45 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:45:46 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:45:47 telegrambot.go:111: [ERROR] Found access dinded ID:5014246776
+2024/09/04 09:45:50 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:45:51 telegrambot.go:111: [ERROR] Found access dinded ID:5014246776
+2024/09/04 09:45:51 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:45:52 telegrambot.go:111: [ERROR] Found access dinded ID:5014246776
+2024/09/04 09:45:53 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:45:54 telegrambot.go:33: [ERROR] Get chat error ChatId:Get error! Bad Request: chat not found 
+ -1001536556119 
+ UserId : 5014246776 
+ gname :  
+
+2024/09/04 09:45:54 telegrambot.go:111: [ERROR] Found access dinded ID:5014246776
+2024/09/04 09:46:00 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:46:34 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:46:51 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:46:53 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:47:01 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:47:05 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:50:30 telegrambot.go:46: [INFO] Authorized on account TheMars1_bot
+2024/09/04 09:50:40 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:50:40 telegrambot.go:89: [INFO] CheckID:5568996608
+2024/09/04 09:50:41 telegrambot.go:104: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/04 09:55:24 telegrambot.go:56: [ERROR] Error in getting update!
+2024/09/04 09:55:25 telegrambot.go:89: [INFO] CheckID:5014246776
+2024/09/04 09:55:25 telegrambot.go:33: [ERROR] Get chat error: Bad Request: chat not found 
+ ChatId: -1001536556119 
+ UserId : 5014246776 
+ gname :  
+
+2024/09/04 09:55:25 telegrambot.go:112: [ERROR] Found access dinded ID:5014246776

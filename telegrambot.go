@@ -1,34 +1,59 @@
 package main
 
 import (
-	"goBot/goUnits/logger"
+	"goBot/goUnits/logger/logger"
 	"strconv"
 	"strings"
 
-	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
+	tgbotapi "github.com/ijnkawakaze/telegram-bot-api"
+	//tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
-func main() {
-	// 替换为你的Telegram Bot的API Token
-	botToken := "6890025685:AAEeuxYDRNftW5RHfQfvOYir5gle0ZRyq8g"
+var Bot, Err = tgbotapi.NewBotAPI(BotToken)
+var BotToken = "6890025685:AAEeuxYDRNftW5RHfQfvOYir5gle0ZRyq8g"
 
-	bot, err := tgbotapi.NewBotAPI(botToken)
+func verifiedUser(uid, gid int64, gname string) bool {
+
+	USerconfig := tgbotapi.ChatConfigWithUser{
+		ChatID: gid,
+		UserID: uid,
+	}
+	chatMenberConfig := tgbotapi.GetChatMemberConfig{
+		USerconfig,
+	}
+
+	getChatMenber, err := Bot.GetChatMember(chatMenberConfig)
+
+	if getChatMenber.Status == "creator" || getChatMenber.Status == "administrator" {
+		return true
+	}
+
 	if err != nil {
-		logger.Error("%s", err)
+
+		logger.Error("Get chat error: %s \n ChatId: %d \n UserId : %d \n gname : %s \n", err, gid, uid, gname)
+		//fmt.Printf("chatmenber :%s", getChatMenber)
+	}
+	return false
+}
+func main() {
+
+	if Err != nil {
+		logger.Error("%s", Err)
 	}
 	logger.SetLogLevel(1)
-	bot.Debug = true
+	Bot.Debug = true
 
-	logger.Info("Authorized on account %s", bot.Self.UserName)
+	logger.Info("Authorized on account %s", Bot.Self.UserName)
 
 	u := tgbotapi.NewUpdate(0)
 	u.Timeout = 600
 
-	updates, _ := bot.GetUpdatesChan(u)
-
-	for update := range updates {
+	updates := Bot.GetUpdatesChan(u)
+	for update := range updates 
 		if update.Message == nil { // 忽略任何非消息更新
 			continue
+		} else {
+			logger.Error("Error in getting update!")
 		}
 
 		// 检查是否为私聊，并且命令是 /ban
@@ -36,48 +61,60 @@ func main() {
 			args := strings.Split(update.Message.Text, " ")
 			if len(args) != 3 {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Usage: /ban <group_id> <user_id>")
-				bot.Send(msg)
+				Bot.Send(msg)
+
 				continue
 			}
 
 			groupIDStr := args[1]
 			userIDStr := args[2]
-
 			groupID, err := strconv.ParseInt(groupIDStr, 10, 64)
 			if err != nil {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Invalid group_id format.")
-				bot.Send(msg)
+				Bot.Send(msg)
 				continue
 			}
 
 			userID, err := strconv.ParseInt(userIDStr, 10, 64)
 			if err != nil {
 				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Invalid user_id format.")
-				bot.Send(msg)
+				Bot.Send(msg)
 				continue
 			}
-
-			// 执行封禁操作
-			kickConfig := tgbotapi.KickChatMemberConfig{
-				ChatMemberConfig: tgbotapi.ChatMemberConfig{
-					ChatID: groupID,
-					UserID: int(userID), // 进行类型转换
-				},
+			chatConfig := tgbotapi.ChatInfoConfig{
+				ChatConfig: tgbotapi.ChatConfig{ChatID: groupID},
 			}
+			groupNameSrt, _ := Bot.GetChat(chatConfig)
+			checkID := update.Message.Chat.ID
+			logger.Info("CheckID:%d", checkID)
+			if verifiedUser(checkID, groupID, groupNameSrt.Title) == true {
 
-			_, err = bot.KickChatMember(kickConfig)
-			if err != nil {
-				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Failed to ban user: "+err.Error())
-				bot.Send(msg)
-				logger.Error("%s", err.Error())
+				// 执行封禁操作
+				/* kickConfig := tgbotapi.KickChatMemberConfig{
+					ChatMemberConfig: tgbotapi.ChatMemberConfig{
+						ChatID: groupID,
+						UserID: userID, // 进行类型转换
+					},
+				} */
+
+				_, err = Bot.BanChatMember(groupID, userID)
+				if err != nil {
+					msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Failed to ban user: "+err.Error())
+					Bot.Send(msg)
+					logger.Error("%s", err.Error())
+				} else {
+					msg := tgbotapi.NewMessage(update.Message.Chat.ID, "User banned successfully!")
+					Bot.Send(msg)
+				}
 			} else {
-				msg := tgbotapi.NewMessage(update.Message.Chat.ID, "User banned successfully!")
-				bot.Send(msg)
+				msg := tgbotapi.NewMessage((update.Message.Chat.ID), "You have no access to action")
+				Bot.Send(msg)
+				logger.Error("Found access dinded ID:%d", update.Message.From.ID)
 			}
 		}
 		if update.Message.Chat.IsPrivate() && strings.HasPrefix(update.Message.Text, "/help") {
 			msg := tgbotapi.NewMessage(update.Message.Chat.ID, "Usage: /ban <group_id> <user_id>")
-			bot.Send(msg)
+			Bot.Send(msg)
 		}
 
 	}

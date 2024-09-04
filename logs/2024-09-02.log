@@ -1,0 +1,68 @@
+2024/09/02 00:18:19 telegrambot.go:23: [INFO] Authorized on account TheMars1_bot
+2024/09/02 10:48:38 telegrambot.go:22: [INFO] Authorized on account TheMars1_bot
+2024/09/02 10:52:58 telegrambot.go:23: [INFO] Authorized on account TheMars1_bot
+2024/09/02 10:53:36 telegrambot.go:23: [INFO] Authorized on account TheMars1_bot
+2024/09/02 10:55:35 telegrambot.go:23: [INFO] Authorized on account TheMars1_bot
+2024/09/02 10:55:39 telegrambot.go:40: [INFO] %!s(int=5568996608)
+2024/09/02 10:56:13 telegrambot.go:23: [INFO] Authorized on account TheMars1_bot
+2024/09/02 10:58:56 telegrambot.go:23: [INFO] Authorized on account TheMars1_bot
+2024/09/02 11:10:44 telegrambot.go:23: [INFO] Authorized on account TheMars1_bot
+2024/09/02 11:11:24 telegrambot.go:23: [INFO] Authorized on account TheMars1_bot
+2024/09/02 12:01:17 telegrambot.go:18: [ERROR] Post "https://api.telegram.org/bot6890025685:AAEeuxYDRNftW5RHfQfvOYir5gle0ZRyq8g/getMe": dial tcp 108.160.169.179:443: i/o timeout
+2024/09/02 12:03:10 telegrambot.go:18: [ERROR] Post "https://api.telegram.org/bot6890025685:AAEeuxYDRNftW5RHfQfvOYir5gle0ZRyq8g/getMe": dial tcp 103.39.76.66:443: i/o timeout
+2024/09/02 12:06:27 telegrambot.go:18: [ERROR] Post "https://api.telegram.org/bot6890025685:AAEeuxYDRNftW5RHfQfvOYir5gle0ZRyq8g/getMe": dial tcp 162.125.32.6:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2024/09/02 12:07:23 telegrambot.go:18: [ERROR] Post "https://api.telegram.org/bot6890025685:AAEeuxYDRNftW5RHfQfvOYir5gle0ZRyq8g/getMe": dial tcp 162.125.32.6:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2024/09/02 12:08:09 telegrambot.go:18: [ERROR] Post "https://api.telegram.org/bot6890025685:AAEeuxYDRNftW5RHfQfvOYir5gle0ZRyq8g/getMe": dial tcp 162.125.32.6:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2024/09/02 12:08:43 telegrambot.go:23: [INFO] Authorized on account TheMars1_bot
+2024/09/02 12:15:07 telegrambot.go:22: [INFO] Authorized on account TheMars1_bot
+2024/09/02 12:15:48 telegrambot.go:22: [INFO] Authorized on account TheMars1_bot
+2024/09/02 12:16:29 telegrambot.go:22: [INFO] Authorized on account TheMars1_bot
+2024/09/02 12:17:12 telegrambot.go:79: [ERROR] Found access dinded ID:5568996608
+2024/09/02 23:07:46 telegrambot.go:35: [INFO] Authorized on account TheMars1_bot
+2024/09/02 23:07:47 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:07:54 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:09:29 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:09:39 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:09:41 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:11:00 telegrambot.go:35: [INFO] Authorized on account TheMars1_bot
+2024/09/02 23:11:00 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:11:01 telegrambot.go:22: [ERROR] Bad Request: chat not found
+2024/09/02 23:11:03 telegrambot.go:86: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/02 23:12:26 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:12:26 telegrambot.go:22: [ERROR] Bad Request: chat not found
+2024/09/02 23:12:27 telegrambot.go:86: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/02 23:18:32 telegrambot.go:35: [INFO] Authorized on account TheMars1_bot
+2024/09/02 23:18:41 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:18:42 telegrambot.go:22: [ERROR] Bad Request: chat not found
+2024/09/02 23:18:43 telegrambot.go:90: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/02 23:23:58 telegrambot.go:35: [INFO] Authorized on account TheMars1_bot
+2024/09/02 23:24:44 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:24:45 telegrambot.go:22: [ERROR] Bad Request: chat not found
+2024/09/02 23:24:46 telegrambot.go:90: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/02 23:25:06 telegrambot.go:35: [INFO] Authorized on account TheMars1_bot
+2024/09/02 23:25:08 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:25:09 telegrambot.go:22: [ERROR] Get chat error :Bad Request: chat not found
+2024/09/02 23:25:10 telegrambot.go:90: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/02 23:33:07 telegrambot.go:35: [INFO] Authorized on account TheMars1_bot
+2024/09/02 23:33:24 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:33:25 telegrambot.go:22: [ERROR] Get chat error :Bad Request: chat not found 
+ ChatId: 
+ UserId : 
+ gname : 
+%!(EXTRA int=-1001536556159, int=1715519775, string=test for info)
+2024/09/02 23:33:26 telegrambot.go:90: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/02 23:34:03 telegrambot.go:35: [INFO] Authorized on account TheMars1_bot
+2024/09/02 23:34:07 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/02 23:34:07 telegrambot.go:22: [ERROR] Get chat error :Bad Request: chat not found 
+ ChatId: -1001536556159 
+ UserId : 1715519775 
+ gname : test for info 
+
+2024/09/02 23:34:08 telegrambot.go:90: [ERROR] Bad Request: user is an administrator of the chat
+2024/09/03 00:06:21 telegrambot.go:45: [ERROR] %!s(<nil>)
+2024/09/03 00:06:21 telegrambot.go:22: [ERROR] Get chat error :Bad Request: chat not found 
+ ChatId: -1001536556159 
+ UserId : 1715519775 
+ gname : test for info 
+
+2024/09/03 00:06:22 telegrambot.go:90: [ERROR] Bad Request: user is an administrator of the chat
