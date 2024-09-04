@@ -1,7 +1,9 @@
 package main
 
 import (
+	"encoding/json"
 	"goBot/goUnits/logger/logger"
+	"os"
 	"strconv"
 	"strings"
 
@@ -9,11 +11,14 @@ import (
 	//tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
-var Bot, Err = tgbotapi.NewBotAPI(BotToken)
-var BotToken = "6890025685:AAEeuxYDRNftW5RHfQfvOYir5gle0ZRyq8g"
+type Config struct {
+	Token    string `json:"token"`
+	Loglevel int    `json:"loglevel"`
+}
+
+var Bot, Err = tgbotapi.NewBotAPI(getToken("config.json"))
 
 func verifiedUser(uid, gid int64, gname string) bool {
-
 	USerconfig := tgbotapi.ChatConfigWithUser{
 		ChatID: gid,
 		UserID: uid,
@@ -35,6 +40,24 @@ func verifiedUser(uid, gid int64, gname string) bool {
 	}
 	return false
 }
+func getToken(file string) (token string) {
+
+	configFile, err := os.Open(file)
+	defer configFile.Close()
+	var config Config
+	decoder := json.NewDecoder(configFile)
+	if err := decoder.Decode(&config); err != nil {
+		logger.Error("Error decoding config file: %s", err)
+		return ""
+	}
+
+	if err != nil {
+		logger.Error("%s", err)
+	}
+	token = config.Token
+	logger.Debug("%s", token)
+	return token
+}
 func main() {
 
 	if Err != nil {
@@ -49,7 +72,7 @@ func main() {
 	u.Timeout = 600
 
 	updates := Bot.GetUpdatesChan(u)
-	for update := range updates 
+	for update := range updates {
 		if update.Message == nil { // 忽略任何非消息更新
 			continue
 		} else {
