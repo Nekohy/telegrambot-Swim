@@ -73,13 +73,13 @@ func main() {
 
 	updates := Bot.GetUpdatesChan(u)
 	for update := range updates {
-		if update.Message == nil { // 忽略任何非消息更新
+		if update.Message == nil { // ignore not message update
 			continue
 		} else {
 			logger.Error("Error in getting update!")
 		}
 
-		// 检查是否为私聊，并且命令是 /ban
+		// Check is private chat
 		if update.Message.Chat.IsPrivate() && strings.HasPrefix(update.Message.Text, "/ban") {
 			args := strings.Split(update.Message.Text, " ")
 			if len(args) != 3 {
@@ -111,14 +111,6 @@ func main() {
 			checkID := update.Message.Chat.ID
 			logger.Info("CheckID:%d", checkID)
 			if verifiedUser(checkID, groupID, groupNameSrt.Title) == true {
-
-				// 执行封禁操作
-				/* kickConfig := tgbotapi.KickChatMemberConfig{
-					ChatMemberConfig: tgbotapi.ChatMemberConfig{
-						ChatID: groupID,
-						UserID: userID, // 进行类型转换
-					},
-				} */
 
 				_, err = Bot.BanChatMember(groupID, userID)
 				if err != nil {
